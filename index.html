@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Password Generator</title>
+</head>
+<body>
+    <div class="container">
+        <div class="wrapper">
+            <div class="header">
+                <h1>Password Generator</h1>
+            </div>
+            <div class="main">
+                <div class="form-output">
+                    <input type="text" id="output" readonly>
+                    <span id="copy"><i class="fa-solid fa-copy"></i></span>
+                    <button type="button" id="generate"><i class="fa-solid fa-rotate"></i></button>
+                </div>
+                <div class="form-range">
+                    <input type="range" id="length" min="8" max="50" value="10">
+                    <label id="labelLength">10</label>
+                </div>
+                <div class="form-options">
+                    <label class="options">
+                        <input type="checkbox" class="checkbox" id="upper">
+                        Uppercase
+                    </label>
+                    <label class="options">
+                        <input type="checkbox" class="checkbox" id="lower">
+                        Lowercase
+                    </label>
+                    <label class="options">
+                        <input type="checkbox" class="checkbox" id="number">
+                        Number
+                    </label>
+                    <label class="options">
+                        <input type="checkbox" class="checkbox" id="symbol">
+                        Symbol
+                    </label>
+                </div>
+            </div>
+            <div class="notif">Copy Berhasil !</div>
+        </div>
+    </div>
+</body>
+<script src="main.js"></script>
+<script src="https://kit.fontawesome.com/fa2afa9a6c.js" crossorigin="anonymous"></script>
+</html>
